@@ -95,7 +95,7 @@ public class PromotionServiceImpl implements PromotionService {
 		promotion.setUnits(unit);
 		promotion.setPrices(price);
 		promotion.setDesc(desc);
-		promotion.setPromotionId("P"+ApplicationConstants.PROMOTIONS.size()+1);
+		promotion.setPromotionId("P"+System.currentTimeMillis());
 		ApplicationConstants.PROMOTIONS.add(promotion);
 		return "Item "+item+" is added for Promotion";
 	}
@@ -116,7 +116,7 @@ public class PromotionServiceImpl implements PromotionService {
 		promotion.setUnits(unit);
 		promotion.setPrices(price);
 		promotion.setDesc(desc);
-		promotion.setPromotionId("P"+ApplicationConstants.PROMOTIONS.size()+1);
+		promotion.setPromotionId("P"+System.currentTimeMillis());
 		ApplicationConstants.PROMOTIONS.add(promotion);
 		return "Item "+items+" is added for Promotion";
 	}
